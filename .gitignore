@@ -1,0 +1,21 @@
+# Evaluation outputs
+/eval_siuo/gpt_eval/
+/eval_siuo/gpt_call/
+/train_ckpt/
+/dataset/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local secrets and editor files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
