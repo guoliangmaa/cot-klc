@@ -38,7 +38,7 @@ cot-klc/
 └── readme.md
 ```
 
-**`data_build/` 和 `dataset/` 是数据。在 `huggingface` 中获取 https://huggingface.co/datasets/liang0812/siuopp **
+**`data_build/` 和 `dataset/` 是数据。在 `huggingface` 中获取：** https://huggingface.co/datasets/liang0812/siuopp
 
 `data_build/` 是自行标注的 jsonl。样本来自 VL-Guard、SPA-VL、Beavertails、MSSBench、HoliSafe、MSTS。两个训练脚本默认读取：
 
