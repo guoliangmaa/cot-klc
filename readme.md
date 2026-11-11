@@ -38,7 +38,7 @@ cot-klc/
 └── readme.md
 ```
 
-**`data_build/` 和 `dataset/` 是数据。在 `huggingface` 中获取：** https://huggingface.co/datasets/liang0812/siuopp
+**`data_build/` 和 `dataset/` 是数据。** 在 [HuggingFace](https://huggingface.co/datasets/liang0812/siuopp) 中获取。 
 
 `data_build/` 是自行标注的 jsonl。样本来自 VL-Guard、SPA-VL、Beavertails、MSSBench、HoliSafe、MSTS。两个训练脚本默认读取：
 
@@ -52,6 +52,7 @@ cot-klc/
 ```bash
 bash eval_siuo/batch.sh train_ckpt/stage1/final
 ```
+其中 `bash.sh` 后面的参数为 LoRA 位置，可以使用 [GitHub Release](https://huggingface.co/datasets/liang0812/siuopp) 中的 权重，也可以使用自己训练后的
 
 **`train_scripts/` 是训练代码。** `train_stage0_sft.py` 做 SFT，`train_stage1_grpo.py` 做 GRPO，提示词和 reward 在 `dpcot.py`。
 
